@@ -1,0 +1,28 @@
+GET http://localhost:5000/api/movies/1
+
+###
+GET http://localhost:5000/api/movies
+
+
+###
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+
+{
+    "name": "Minions",
+    "category": "Family",
+    "rentPrice": 4
+}
+
+###
+PUT http://localhost:5000/api/movies/62866141fbc1b13ae6e5e4fd
+Content-Type: application/json
+
+{
+    "name": "Batman",
+    "category": "Action",
+    "rentPrice": 4
+}
+
+###
+DELETE http://localhost:5000/api/movies/62866141fbc1b13ae6e5e4fd

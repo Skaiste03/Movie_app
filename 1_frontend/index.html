@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./styles/1_resets.css" />
+    <link rel="stylesheet" href="./styles/2_header.css" />
+    <link rel="stylesheet" href="./styles/3_index.css" />
+    <!-- Custom JS -->
+    <script src="./scripts/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Movie Rent App</div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Home page</h1>
+      <div id="search-container">
+        <input type="text" id="search" placeholder="Search.." />
+        <button id="submit-btn">Submit</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      <section>
+        <h3>Movie list</h3>
+        <div id="movies-filter-container">
+          <label for="movies-filter-by-category">Filter category:</label>
+          <select
+            name="movies-filter-by-category"
+            id="movies-filter-by-category"
+          ></select>
+          <label for="movies-filter-by-price">Filter price:</label>
+          <select
+            name="movies-filter-by-price"
+            id="movies-filter-by-price"
+          ></select>
+        </div>
+        <p id="movie-submit-message"></p>
+        <div id="movies-container"></div>
+        <div id="pagination-container">
+          <div id="previous-page-btn"></div>
+          <div id="current-page-btn"></div>
+          <div id="next-page-btn"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

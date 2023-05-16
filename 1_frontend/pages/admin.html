@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin panel</title>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../styles/1_resets.css" />
+    <link rel="stylesheet" href="../styles/2_header.css" />
+    <link rel="stylesheet" href="../styles/3_admin.css" />
+    <!-- Custom JS -->
+    <script src="../scripts/admin.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div id="logo">Movie Rent App</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Admin panel</h1>
+      <section>
+        <h3>Add new movie</h3>
+        <form id="add-movie-form">
+          <div>
+            <label for="movieName">Movie name</label>
+            <input type="text" id="movieName" required />
+          </div>
+          <div>
+            <label for="movieCategory">Movie category</label>
+            <input type="text" id="movieCategory" required />
+          </div>
+          <div>
+            <label for="movieRentPrice">Movie rent price</label>
+            <input type="text" id="movieRentPrice" required />
+          </div>
+
+          <div><input type="submit" value="Add movie" /></div>
+        </form>
+        <p><span id="form-submit-message"></span></p>
+      </section>
+
+      <section>
+        <h3>Movie list</h3>
+        <div id="movie-list-container"></div>
+        <p><span id="movie-update-delete-message"></span></p>
+        <div id="pagination-container">
+          <div id="previous-page-btn"></div>
+          <div id="current-page-btn"></div>
+          <div id="next-page-btn"></div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
